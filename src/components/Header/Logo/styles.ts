@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Svg = styled.svg`
-	max-height: 80%;
+	max-height: 90%;
 	width: same-as-height;
 `;
 
