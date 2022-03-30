@@ -12,7 +12,7 @@ const MENU_ITEMS = [
 ];
 
 const Menu = () => {
-	const [menuIsExpanded, setMenuIsExpanded] = useState(true);
+	const [menuIsExpanded, setMenuIsExpanded] = useState(false);
 	const { pathname } = useRouter();
 
 	const toggleMenu = () => setMenuIsExpanded(prevState => !prevState);
