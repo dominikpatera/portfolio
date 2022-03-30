@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors } from '../../../../styles/theme';
+import { colors, media } from '../../../../styles/theme';
 
 export const MobileMenuIndicator = styled.button<{ expanded: boolean }>`
 	width: 2rem;
@@ -11,6 +11,10 @@ export const MobileMenuIndicator = styled.button<{ expanded: boolean }>`
 	border: none;
 	user-select: none;
 	cursor: pointer;
+
+	@media (min-width: ${media.lg}) {
+		display: none;
+	}
 
 	& .menu-toggle-wrap {
 		display: flex;
@@ -44,12 +48,10 @@ export const MobileMenuIndicator = styled.button<{ expanded: boolean }>`
 `;
 
 export const Menu = styled.ul<{ expanded: boolean }>`
-	display: flex;
+	display: ${props => (props.expanded ? 'flex' : 'none')};
 	flex-direction: column;
 	align-items: center;
 	position: absolute;
-	opacity: ${props => (props.expanded ? 1 : 0)};
-	transition: opacity 0.15s ease;
 	left: 0;
 	top: 4rem;
 	padding: 2rem;
@@ -59,6 +61,20 @@ export const Menu = styled.ul<{ expanded: boolean }>`
 	/* height: fit-content; */
 	gap: 1rem;
 	font-size: larger;
+
+	@media (min-width: ${media.lg}) {
+		display: flex;
+		flex-direction: row;
+		position: unset;
+		left: unset;
+		top: unset;
+		padding: 0;
+		opacity: 1;
+		height: 100%;
+		width: fit-content;
+		font-size: large;
+		transition: unset;
+	}
 `;
 
 export const Item = styled.li<{ active: boolean }>`

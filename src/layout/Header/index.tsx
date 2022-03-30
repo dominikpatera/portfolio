@@ -5,9 +5,7 @@ import { Header as StyledHeader } from './styles';
 const Header: React.FC<Props> = props => {
 	return (
 		<StyledHeader>
-			<nav>
-				<Logo />
-			</nav>
+			<Logo />
 			<Menu />
 		</StyledHeader>
 	);
