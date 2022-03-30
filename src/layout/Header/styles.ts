@@ -8,6 +8,6 @@ export const Header = styled.header`
 	flex-direction: row;
 	justify-content: space-between;
 	width: 100vw;
-	height: 4rem;
+	height: 5rem;
 	padding-block: 0.75rem;
 `;

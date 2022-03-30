@@ -42,7 +42,7 @@ export const MobileMenuIndicator = styled.button<{ expanded: boolean }>`
 		display: block;
 		height: 2px;
 		width: 22px;
-		background-color: #fff;
+		background-color: ${colors.foreground};
 		transition: transform 0.15s ease;
 	}
 `;
@@ -57,7 +57,7 @@ export const Menu = styled.ul<{ expanded: boolean }>`
 	padding: 2rem;
 	margin: 0;
 	width: 100vw;
-	height: calc(100vh - 4rem);
+	height: calc(100vh - 5rem);
 	/* height: fit-content; */
 	gap: 1rem;
 	font-size: larger;
@@ -74,10 +74,17 @@ export const Menu = styled.ul<{ expanded: boolean }>`
 		width: fit-content;
 		font-size: large;
 		transition: unset;
+		gap: 2rem;
 	}
 `;
 
 export const Item = styled.li<{ active: boolean }>`
 	list-style-type: none;
 	color: ${props => (!props.active ? colors.accents[4] : colors.foreground)};
+	transition: color 0.2s ease;
+	letter-spacing: 0.2em;
+
+	&:hover {
+		color: ${colors.accents[8]};
+	}
 `;

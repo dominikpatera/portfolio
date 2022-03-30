@@ -16,7 +16,10 @@ export const colors = {
 		'hsl(0, 0%, 42%)',
 		'hsl(0, 0%, 56%)',
 		'hsl(0, 0%, 63%)',
-		'hsl(0, 0%, 92%)',
+		'hsl(0, 0%, 70%)',
+		'hsl(0, 0%, 77%)',
+		'hsl(0, 0%, 84%)',
+		'hsl(0, 0%, 91%)',
 	], // darkest -> lightest
 	error: {
 		light: 'hsl(0, 100%, 60%)',
