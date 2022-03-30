@@ -1,0 +1,25 @@
+@font-face {
+	src: url('../../assets/fonts/NeueMontreal/PPNeueMontreal-Thin.otf');
+	src: url('../../assets/fonts/NeueMontreal/PPNeueMontreal-Bold.otf');
+	src: url('../../assets/fonts/NeueMontreal/PPNeueMontreal-Medium.otf');
+	font-family: 'Neuemontreal';
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	background-color: hsl(0, 0%, 0%);
+	color: hsl(0, 0%, 100%);
+	font-family: 'Neuemontreal', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+		Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}

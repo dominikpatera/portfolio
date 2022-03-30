@@ -3,12 +3,7 @@ import Layout from '../layout';
 
 const Home: NextPage = () => {
 	return (
-		<Layout
-			title="Dominik Patera"
-			description="Dominik Patera - Frontend Developer 🚀"
-		>
-			Hello World
-		</Layout>
+		<Layout title="Dominik Patera" description="Dominik Patera - Frontend Developer 🚀"></Layout>
 	);
 };
 

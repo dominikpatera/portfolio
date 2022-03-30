@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Header from './Header';
 
 const Layout: React.FC<Props> = ({ children, title, description }) => {
 	return (
@@ -15,6 +16,8 @@ const Layout: React.FC<Props> = ({ children, title, description }) => {
 				<meta name="msapplication-TileColor" content="#000000" />
 				<meta name="theme-color" content="#000000" />
 			</Head>
+
+			<Header />
 
 			<main>{children}</main>
 
