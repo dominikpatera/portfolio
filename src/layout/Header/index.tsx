@@ -2,7 +2,7 @@ import Logo from '../../components/Header/Logo';
 import Menu from '../../components/Header/Menu';
 import { Header as StyledHeader } from './styles';
 
-const Header: React.FC<Props> = props => {
+const Header = () => {
 	return (
 		<StyledHeader>
 			<Logo />
@@ -10,7 +10,5 @@ const Header: React.FC<Props> = props => {
 		</StyledHeader>
 	);
 };
-
-type Props = {};
 
 export default Header;
