@@ -3,7 +3,7 @@ import { layout } from '../../../styles/globals';
 
 export const Header = styled.header`
 	${layout}
-
+	position: absolute;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;

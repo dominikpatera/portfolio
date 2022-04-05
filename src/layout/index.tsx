@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Header from './Header';
+import Main from './Main';
 
 const Layout: React.FC<Props> = ({ children, title, description }) => {
 	return (
@@ -19,7 +20,7 @@ const Layout: React.FC<Props> = ({ children, title, description }) => {
 
 			<Header />
 
-			<main>{children}</main>
+			<Main>{children}</Main>
 
 			<footer></footer>
 		</>
