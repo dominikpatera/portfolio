@@ -10,4 +10,6 @@ export const Header = styled.header`
 	width: 100vw;
 	height: 5rem;
 	padding-block: 0.75rem;
+	z-index: 10000;
+	background-color: hsla(0, 0%, 0%, 0.9); ;
 `;

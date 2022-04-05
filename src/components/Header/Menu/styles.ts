@@ -61,6 +61,7 @@ export const Menu = styled.ul<{ expanded: boolean }>`
 	/* height: fit-content; */
 	gap: 1rem;
 	font-size: larger;
+	background-color: hsla(0, 0%, 0%, 0.9);
 
 	@media (min-width: ${media.lg}) {
 		display: flex;
