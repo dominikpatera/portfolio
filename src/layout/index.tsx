@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import Head from 'next/head';
 import Header from './Header';
 import Main from './Main';
@@ -16,6 +17,7 @@ const Layout: React.FC<Props> = ({ children, title, description }) => {
 				<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
 				<meta name="msapplication-TileColor" content="#000000" />
 				<meta name="theme-color" content="#000000" />
+				<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
 			</Head>
 
 			<Header />
