@@ -8,7 +8,7 @@ export const media = {
 
 export const colors = {
 	background: 'hsl(0, 0%, 0%)', // black
-	foreground: 'hsl(0, 0%, 100%)', // white
+	foreground: 'hsl(32, 43%, 93%)', // off white
 	accents: [
 		'hsl(0, 0%, 7%)',
 		'hsl(0, 0%, 21%)',

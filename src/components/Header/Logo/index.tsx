@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Svg as StyledSvg, Nav as StyledNav } from './styles';
+import { colors } from '../../../../styles/theme';
 
 const Logo: React.FC<Props> = props => {
 	return (
@@ -8,7 +9,7 @@ const Logo: React.FC<Props> = props => {
 				<StyledSvg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360">
 					<g
 						transform="translate(0.000000,360.000000) scale(0.100000,-0.100000)"
-						fill="#ffffff"
+						fill="hsl(32, 43%, 93%)"
 						stroke="none"
 					>
 						<path
