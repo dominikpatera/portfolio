@@ -28,3 +28,7 @@ a {
 * {
 	box-sizing: border-box;
 }
+
+.d-scroll-none {
+	overflow: hidden;
+}

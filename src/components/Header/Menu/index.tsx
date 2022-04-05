@@ -15,7 +15,14 @@ const Menu = () => {
 	const [menuIsExpanded, setMenuIsExpanded] = useState(false);
 	const { pathname } = useRouter();
 
-	const toggleMenu = () => setMenuIsExpanded(prevState => !prevState);
+	const toggleMenu = () => {
+		setMenuIsExpanded(prevState => {
+			document.querySelector('body')?.classList.remove('d-scroll-none');
+
+			if (!prevState) document.querySelector('body')?.classList.add('d-scroll-none');
+			return !prevState;
+		});
+	};
 
 	return (
 		<nav>

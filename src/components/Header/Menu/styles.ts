@@ -59,7 +59,6 @@ export const Menu = styled.ul<{ expanded: boolean }>`
 	margin: 0;
 	width: 100vw;
 	height: 100vh;
-	height: -webkit-fill-available;
 	/* height: fit-content; */
 	gap: 1rem;
 	font-size: 2.5rem;
