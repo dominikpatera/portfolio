@@ -2,22 +2,9 @@ import type { NextPage } from 'next';
 import Layout from '../layout';
 import { HelloSection, Content } from './styles';
 import Text from '../components/Main/Hello/Text';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const Home: NextPage = () => {
-	const [activeGradient, setActiveGradient] = useState(0);
-
-	// useEffect(() => {
-	// 	const gradientInterval = setInterval(() => {
-	// 		setActiveGradient(prev => (prev + 1) % 3);
-	// 		// clearInterval(gradientInterval);
-	// 	}, 4000);
-
-	// 	return () => {
-	// 		clearInterval(gradientInterval);
-	// 	};
-	// }, []);
-
 	return (
 		<Layout
 			title="Dominik Patera - Frontend Developer"

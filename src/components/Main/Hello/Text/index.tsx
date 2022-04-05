@@ -1,6 +1,4 @@
-import { colors } from '../../../../../styles/theme';
 import { Text as StyledText, GradientText } from './styles';
-import { CSSTransition } from 'react-transition-group';
 
 const Text: React.FC<Props> = ({
 	position,
