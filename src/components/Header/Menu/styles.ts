@@ -52,13 +52,14 @@ export const Menu = styled.ul<{ expanded: boolean }>`
 	flex-direction: column;
 	align-items: center;
 	position: absolute;
+	z-index: -1;
 	left: 0;
-	top: 4rem;
+	top: 0;
 	padding: 2rem;
 	margin: 0;
 	width: 100vw;
-	height: calc(100vh - 5rem);
-	height: calc(-webkit-fill-available - 5rem);
+	height: 100vh;
+	height: -webkit-fill-available;
 	/* height: fit-content; */
 	gap: 1rem;
 	font-size: 2.5rem;
