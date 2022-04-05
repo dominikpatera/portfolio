@@ -6,5 +6,6 @@ export const Main = styled.main`
 	display: flex;
 	width: 100vw;
 	min-height: 100vh;
+	min-height: -webkit-fill-available;
 	${layout}
 `;

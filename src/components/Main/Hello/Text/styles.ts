@@ -24,7 +24,7 @@ export const Text = styled.div<TextProps>`
 	padding: ${p => p.padding};
 	margin: ${p => p.margin};
 	line-height: 90%;
-
+	user-select: none;
 	background: ${p => p.color};
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;

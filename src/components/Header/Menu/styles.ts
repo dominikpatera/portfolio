@@ -58,10 +58,12 @@ export const Menu = styled.ul<{ expanded: boolean }>`
 	margin: 0;
 	width: 100vw;
 	height: calc(100vh - 5rem);
+	height: calc(-webkit-fill-available - 5rem);
 	/* height: fit-content; */
 	gap: 1rem;
-	font-size: larger;
-	background-color: hsla(0, 0%, 0%, 0.9);
+	font-size: 2.5rem;
+	background-color: hsla(0, 0%, 0%, 0.93);
+	justify-content: center;
 
 	@media (min-width: ${media.lg}) {
 		display: flex;

@@ -5,6 +5,11 @@
 	font-family: 'Neuemontreal';
 }
 
+::selection {
+	color: #000;
+	background: #0094ff;
+}
+
 html,
 body {
 	padding: 0;
